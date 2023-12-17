@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and signup form</form></title>
+    <link rel="stylesheet" href="/Css/styleLogin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<div class="wrapper">
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>LOGO</p>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#" class ="link">Home</a></li>
+                <li><a href="#" class ="link">about</a></li>
+                <li><a href="#" class ="link">services</a></li>
+                <li><a href="#" class ="link">contact us</a></li>
+            </ul>
+        </div>
+        <div class="nav-boutton">
+            <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+            <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+
+    <!----------------------------form box ----------------------->
+    <div class="form-box">
+
+          <!------------------------------login form ------------->
+          <div class="login-container" id="login">
+            <div class="top">
+
+                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <header>Login</header>
+            </div>
+
+                <div class="input-box">
+                    <input type="email" class="input-field"placeholder="User or Email" id="loginEmail">
+                    <i class="bx bx-user"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" class="input-field"placeholder="Password" id="loginPassword">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Sign in" onclick="loginValidation()">
+                </div>
+
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" name="" id="login-check">
+                        <label for="login-check" >Remember me </label>
+                    </div>
+
+                    <div class="two">
+                        <label><a href="#">Forget Password? </a></label>
+                    </div>
+                </div>
+
+                
+            </div>
+        <!------------------------------regesteration form ------------->
+        <div class="resgister-container" id="resgister">
+            <div class="top">
+                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                <header>Sign Up</header>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" class="input-field"placeholder="Firstname" id="fName">
+                    <i class="bx bx-user"></i>
+                </div>
+
+
+                <div class="input-box">
+                    <input type="text" class="input-field"placeholder="Lastname" id="lName">
+                    <i class="bx bx-user"></i>
+                </div>
+
+
+            </div>
+                <div class="input-box">
+                    <input type="text" class="input-field"placeholder="Email" id="email">
+                    <i class="bx bx-envelope"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" class="input-field"placeholder="Password" id="password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="submit" class="submit" value="register" onclick="saveData()">
+                </div>
+
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" name="" id="resgister-check">
+                        <label for="resgister-check" >Remember me </label>
+                    </div>
+
+                    <div class="two">
+                        <label><a href="#">Terms & condtions </a></label>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/adminPage.css">
+    <title>Cart page</title>
+
+
+</head>
+
+<body onload="seeorder()">
+
+    <section id="header">
+        <a href="#"><img src="/images/download.jpeg" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="shop.html" href="shop.html">Shop</a></li>
+                <li><a href="wishlist.html">wishList</a></li>
+                <li><a href="cart.html">cart</a></li>
+                <li><a href="cart.html"><i class="gg-shopping-cart"></i></a></li>
+                <li id="logout"><a href="index.html"><button class="bn632-hover bn26">log out</button></a>
+
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="card">
+        <div class="img" id="image" style="margin-top: 50px;margin-left: 450px;">
+            <input type="file" width="200px" height="200px" id="img" alt="please add the image" accept="image/*">
+        </div>
+
+
+        <div class="details" style="margin-top: 50px;">
+            <input type="text" class="notp" value="" placeholder="name of the product"><br>
+            <input type="text" class="des" value="" placeholder="the description"><br>
+            <input type="number" class="price" value="" placeholder="the price ">
+            <input type="submit" class="submet" value="add new prodct">
+        </div>
+    </section>
+    <section id="ordercoustomerconfirmed">
+        <div id="ifnotorder"></div>
+
+
+    </section>
+
+    <script src="/js/adminPage.js"></script>
+</body>
+
+</html>

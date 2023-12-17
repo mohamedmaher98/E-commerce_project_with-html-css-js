@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link rel="stylesheet" href="/css/productStyle.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="/images/download.jpeg" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="shop.html" href="shop.html">Shop</a></li>
+                <li><a href="wishlist.html">wishList</a></li>
+                <li><a href="cart.html">cart</a></li>
+                <li><a href="cart.html"><i class="gg-shopping-cart"></i></a></li>
+                <li id="logout"><a href="index.html"><button class="bn632-hover bn26">log out</button></a>
+
+                </li>
+    
+            </ul>
+        </div>
+       </section>
+
+       <section class="products-container">
+
+        <!--left side-->
+        <div class="img-card">
+            <img src="/images/tshirt.jpg"  alt=""id="mainImg">
+     
+
+        <!-- small images-->
+        <div class="small-card">
+            <img src="/images/tshirt1.jpg"alt="" class="smImg">
+            <img src="/images/tshir2.jpg"alt="" class="smImg">
+            <img src="/images/tshirt3.jpg"alt="" class="smImg">
+            <img src="/images/tshirt.jpg"alt=""class="smImg">          
+        </div>
+    </div>
+
+          <!--right side -->
+        <div class="product-info">
+
+            <h3>this is the product name </h3>
+            <h5>price $140 <del> $170 </del></h5>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Asperiores ratione unde perferendis, a laboriosam aut sin
+                 t consectetur, officiis assumenda soluta dolore et adipisci
+                 , voluptas quisquam dignissimos dolores magnam! Eum, molestiae?</p>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores modi eius animi.
+                 Explicabo similique officia, amet expedita, quaerat dolore autem 
+                fugiat tenetur aliquam cumque, aspernatur voluptate aperiam nam quam eius.</p>
+                
+
+                    <div class="size">
+                        <h5>size</h5>
+                        <select name="size-option" id="sizopt" class="sizeopt">
+                            <option value="xxl">xxl</option>
+                            <option value="xl">xl</option>
+                            <option value="regular">regular</option>
+                            <option value="small">small</option>
+                        </select>
+                    </div class= "quantity">
+
+                    <input type="number" min="1" value="1">
+                    <button onclick="addtocart()">add to bye</button>
+        
+            </div>
+
+
+
+       </section>
+
+       <script src="/js/productjs.js"></script>
+       <script>
+        
+       </script>
+
+</body>
+</html>
